@@ -2,6 +2,7 @@
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace MG.MDV
 {
@@ -55,7 +56,7 @@ namespace MG.MDV
 
             // load file
 
-            var asset = AssetDatabase.LoadAssetAtPath<TextAsset>( newPath );
+            var asset = AssetDatabase.LoadAssetAtPath<Object>( newPath );
 
             if( asset != null )
             {
